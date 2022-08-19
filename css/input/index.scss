@@ -1,0 +1,20 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #494949;
+}
+
+.lista-apis {
+  list-style: none;
+  display: flex;
+  gap: 1.75em;
+  li a {
+    text-transform: uppercase;
+    color: crimson;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 2em;
+    text-decoration: underline dotted rgb(69, 100, 38);
+  }
+}
