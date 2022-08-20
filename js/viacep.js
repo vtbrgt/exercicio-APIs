@@ -8,7 +8,8 @@ let localidade = '';
 let uf = '';
 let resultado = [];
 
-const p = document.createElement('p');
+const divResultado = document.querySelector('.resultado');
+const span = document.querySelector('span');
 
 function promise(url) {
   return fetch(url).then((response) => response.json());
@@ -24,7 +25,7 @@ function setValues() {
   resultado = resultado.join(', ').toString();
   console.log(resultado);
 
-  p.innerText = resultado;
+  span.innerText = resultado;
 }
 
 function getCEP(event) {
@@ -41,21 +42,8 @@ function getCEP(event) {
 function showData() {
   getCEP(event);
 
-  const div = document.createElement('div');
-  const label = document.createElement('label');
-
-  label.innerText = 'Esse foi o resultado encontrado:';
-
-  div.classList.add('container');
-  div.appendChild(label);
-  div.appendChild(p);
-
-  const verifica = document.querySelector('div');
-  console.log(verifica);
-  if (verifica == null) {
-    console.log('teste');
-    document.body.appendChild(div);
-  }
+  divResultado.style.display = 'block'
+  divResultado.classList.add('mostra')
 
   cepData = {};
   logradouro = '';

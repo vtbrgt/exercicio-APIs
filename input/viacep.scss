@@ -1,0 +1,92 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  background: #494949;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.voltar {
+  align-self: flex-start;
+  color: crimson;
+  text-decoration: underline solid black;
+  font-weight: bold;
+  text-shadow: 0 3px 3px;
+  margin-left: 6em;
+  :hover {
+    cursor: pointer;
+  }
+}
+
+.container {
+  background: #d1d1d1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: crimson;
+  text-align: center;
+  font-size: 1.25em;
+  padding: 1.75em 1.75em 1em 1.75em;
+  max-width: 300px;
+  box-shadow: 0 25px 50px -12px;
+  border-radius: 20px;
+  border: 1px solid;
+  gap: 5px;
+  label {
+    text-decoration: underline solid black;
+    font-weight: bold;
+  }
+  .obs {
+    font-size: 0.8em;
+    text-decoration: none;
+    margin-bottom: 0.75em;
+  }
+  #cep {
+    height: 15px;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    :hover {
+      border-color: crimson;
+    }
+  }
+  button {
+    all: unset;
+    background: black;
+    margin-top: 1em;
+    width: 125px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid;
+    :hover {
+      cursor: pointer;
+      transition: all 1s ease;
+      color: #fefefe;
+    }
+  }
+  span {
+    display: block;
+  }
+}
+
+.resultado {
+  display: none;
+}
+
+.mostra {
+  animation: show-up 0.5s forwards;
+}
+
+@keyframes show-up {
+  from {
+    opacity: 0;
+    transform: translateY(250px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
