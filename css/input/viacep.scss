@@ -6,6 +6,19 @@ body {
   gap: 2em;
   justify-content: center;
   background: #494949;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.voltar {
+  align-self: flex-start;
+  color: crimson;
+  text-decoration: underline solid black;
+  font-weight: bold;
+  text-shadow: 0 3px 3px;
+  margin-left: 6em;
+  :hover {
+    cursor: pointer;
+  }
 }
 
 .container {
@@ -15,7 +28,6 @@ body {
   align-items: center;
   color: crimson;
   text-align: center;
-  font-family: 'IBM Plex Mono', monospace;
   font-size: 1.25em;
   padding: 1.75em 1.75em 1em 1.75em;
   max-width: 300px;
@@ -37,9 +49,9 @@ body {
     width: 150px;
     text-align: center;
     font-weight: bold;
-  }
-  #cep:hover {
-    border-color: crimson;
+    :hover {
+      border-color: crimson;
+    }
   }
   button {
     all: unset;
@@ -49,13 +61,32 @@ body {
     height: 40px;
     border-radius: 5px;
     border: 1px solid;
+    :hover {
+      cursor: pointer;
+      transition: all 1s ease;
+      color: #fefefe;
+    }
   }
-  button:hover {
-    cursor: pointer;
-    transition: all 1s ease;
-    color: #fefefe;
+  span {
+    display: block;
   }
 }
 
-// 0 25px 50px -12px #db2777
-// rgb(69, 100, 38)
+.resultado {
+  display: none;
+}
+
+.mostra {
+  animation: show-up 0.5s forwards;
+}
+
+@keyframes show-up {
+  from {
+    opacity: 0;
+    transform: translateY(250px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
