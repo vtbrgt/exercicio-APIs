@@ -3,12 +3,14 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  gap: 2em;
   justify-content: center;
   background: #494949;
 }
 
-/* line 9, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
-form {
+/* line 11, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
+.container {
   background: #d1d1d1;
   display: flex;
   flex-direction: column;
@@ -25,34 +27,34 @@ form {
   gap: 5px;
 }
 
-/* line 24, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
-form label {
+/* line 26, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
+.container label {
   text-decoration: underline solid black;
   font-weight: bold;
 }
 
-/* line 28, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
-form .obs {
+/* line 30, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
+.container .obs {
   font-size: 0.8em;
   text-decoration: none;
   margin-bottom: 0.75em;
 }
 
-/* line 33, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
-form #cep {
+/* line 35, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
+.container #cep {
   height: 15px;
   width: 150px;
   text-align: center;
   font-weight: bold;
 }
 
-/* line 39, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
-form #cep:hover {
+/* line 41, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
+.container #cep:hover {
   border-color: crimson;
 }
 
-/* line 42, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
-form button {
+/* line 44, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
+.container button {
   all: unset;
   background: black;
   margin-top: 1em;
@@ -62,8 +64,8 @@ form button {
   border: 1px solid;
 }
 
-/* line 51, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
-form button:hover {
+/* line 53, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
+.container button:hover {
   cursor: pointer;
   transition: all 1s ease;
   color: #fefefe;
