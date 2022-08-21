@@ -23,7 +23,6 @@ function setValues() {
 
   resultado.push(logradouro, bairro, localidade, uf);
   resultado = resultado.join(', ').toString();
-  console.log(resultado);
 
   span.innerText = resultado;
 }
@@ -31,7 +30,6 @@ function setValues() {
 function getCEP(event) {
   event.preventDefault();
   let cepUser = input.value;
-  console.log(cepUser);
   promise(`https://viacep.com.br/ws/${cepUser}/json/`)
     .then((cep) => {
       cepData = cep;
@@ -42,8 +40,8 @@ function getCEP(event) {
 function showData() {
   getCEP(event);
 
-  divResultado.style.display = 'block'
-  divResultado.classList.add('mostra')
+  divResultado.style.display = 'block';
+  divResultado.classList.add('mostra');
 
   cepData = {};
   logradouro = '';
