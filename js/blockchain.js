@@ -1,14 +1,10 @@
 const span = document.querySelector('span')
 let valorReais = {}
 
-function getValue() {
-    fetch('https://blockchain.info/ticker')
-    .then(response => response.json())
-    .then(BRL => valorReais = BRL.BRL)
-    .then((set) => {
-       span.innerText = ('R$ ' + valorReais.buy).replace('.', ',') 
-    }
-    )
+async function getValue() {
+    const bitCoinInfo = await fetch('https://blockchain.info/ticker')
+    const bitCoinReal = await (await bitCoinInfo).json()
+    span.innerText = ('R$ ' + bitCoinReal.BRL.buy).replace('.', ',') 
 }
 getValue()
 setInterval(getValue, 30000)
