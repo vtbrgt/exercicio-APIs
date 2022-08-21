@@ -49,23 +49,25 @@ body {
     width: 150px;
     text-align: center;
     font-weight: bold;
-    :hover {
-      border-color: crimson;
-    }
+  }
+  #cep:hover {
+    border-color: crimson;
   }
   button {
     all: unset;
     background: black;
-    margin-top: 1em;
+    margin: 1em 0;
     width: 125px;
     height: 40px;
     border-radius: 5px;
     border: 1px solid;
-    :hover {
-      cursor: pointer;
-      transition: all 1s ease;
-      color: #fefefe;
-    }
+    padding: 0.15em 0.65em;
+    font-size: 0.8em;
+  }
+  button:hover {
+    cursor: pointer;
+    transition: all 1s ease;
+    color: #fefefe;
   }
   span {
     display: block;

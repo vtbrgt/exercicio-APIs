@@ -1,4 +1,4 @@
-/* line 1, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
+/* line 1, ../Origamid/JavaScript Completo/exercicios_apis/css/input/app.scss */
 body {
   height: 100vh;
   display: flex;
@@ -10,7 +10,7 @@ body {
   font-family: 'IBM Plex Mono', monospace;
 }
 
-/* line 12, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
+/* line 12, ../Origamid/JavaScript Completo/exercicios_apis/css/input/app.scss */
 .voltar {
   align-self: flex-start;
   color: crimson;
@@ -20,12 +20,12 @@ body {
   margin-left: 6em;
 }
 
-/* line 19, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
+/* line 19, ../Origamid/JavaScript Completo/exercicios_apis/css/input/app.scss */
 .voltar :hover {
   cursor: pointer;
 }
 
-/* line 24, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
+/* line 24, ../Origamid/JavaScript Completo/exercicios_apis/css/input/app.scss */
 .container {
   background: #d1d1d1;
   display: flex;
@@ -42,20 +42,20 @@ body {
   gap: 5px;
 }
 
-/* line 38, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
+/* line 38, ../Origamid/JavaScript Completo/exercicios_apis/css/input/app.scss */
 .container label {
   text-decoration: underline solid black;
   font-weight: bold;
 }
 
-/* line 42, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
+/* line 42, ../Origamid/JavaScript Completo/exercicios_apis/css/input/app.scss */
 .container .obs {
   font-size: 0.8em;
   text-decoration: none;
   margin-bottom: 0.75em;
 }
 
-/* line 47, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
+/* line 47, ../Origamid/JavaScript Completo/exercicios_apis/css/input/app.scss */
 .container #cep {
   height: 15px;
   width: 150px;
@@ -63,40 +63,42 @@ body {
   font-weight: bold;
 }
 
-/* line 52, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
-.container #cep :hover {
+/* line 53, ../Origamid/JavaScript Completo/exercicios_apis/css/input/app.scss */
+.container #cep:hover {
   border-color: crimson;
 }
 
-/* line 56, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
+/* line 56, ../Origamid/JavaScript Completo/exercicios_apis/css/input/app.scss */
 .container button {
   all: unset;
   background: black;
-  margin-top: 1em;
+  margin: 1em 0;
   width: 125px;
   height: 40px;
   border-radius: 5px;
   border: 1px solid;
+  padding: 0.15em 0.65em;
+  font-size: 0.8em;
 }
 
-/* line 64, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
-.container button :hover {
+/* line 67, ../Origamid/JavaScript Completo/exercicios_apis/css/input/app.scss */
+.container button:hover {
   cursor: pointer;
   transition: all 1s ease;
   color: #fefefe;
 }
 
-/* line 70, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
+/* line 72, ../Origamid/JavaScript Completo/exercicios_apis/css/input/app.scss */
 .container span {
   display: block;
 }
 
-/* line 75, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
+/* line 77, ../Origamid/JavaScript Completo/exercicios_apis/css/input/app.scss */
 .resultado {
   display: none;
 }
 
-/* line 79, ../Origamid/JavaScript Completo/exercicios_apis/css/input/viacep.scss */
+/* line 81, ../Origamid/JavaScript Completo/exercicios_apis/css/input/app.scss */
 .mostra {
   animation: show-up 0.5s forwards;
 }
@@ -112,4 +114,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=viacep.css.map */
+/*# sourceMappingURL=app.css.map */
